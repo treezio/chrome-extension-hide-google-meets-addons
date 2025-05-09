@@ -1,14 +1,26 @@
 {
   "manifest_version": 3,
-  "name": "Hide Google Meet Addons",
-  "version": "0.1.0",
-  "description": "Hides addon installation suggestions in Google Meet chat.",
-  "permissions": ["activeTab", "scripting"],
+  "name": "Hide Meet Addons Suggestions",
+  "version": "0.2.0",
+  "description": "Hides annoying addons installation suggestions in Google Meet chat.",
+  "permissions": [],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "content_scripts": [
     {
       "matches": ["https://meet.google.com/*"],
       "js": ["scripts/content.js"],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
 }
