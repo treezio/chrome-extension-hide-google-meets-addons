@@ -4,5 +4,5 @@ This browser extension hides annoying addons installation suggestions from Googl
 
 ## Installation
 
-- Clone or donwload package to your computer.
+- Clone or download the project to your computer.
 - Load unpacked extension from browser extensions manager.
